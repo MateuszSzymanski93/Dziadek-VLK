@@ -1,0 +1,193 @@
+:root {
+    --gold: rgb(107, 102, 47);
+    --silver: rgb(164, 158, 140);
+    --glass: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-image: url("img/pattern.jpg");
+    color: var(--silver);
+    margin: 0px;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    margin: 20px;
+    font-family: 'Fondamento', cursive;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2.3vw;
+}
+
+#subtitle {
+    font-size: 2.3vw;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#title {
+    margin-left: 100px;
+}
+
+/*Navigation*/
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 40px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: var(--glass);
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    border-right: 5px dotted var(--silver);
+    font-family: 'Courgette', cursive;
+    font-size: 2vw;
+    overflow: hidden;
+}
+
+button > a {
+    text-decoration: none;
+    color: var(--silver);
+    transition: 1s;
+}
+
+button > a:hover {
+    color: var(--gold);
+}
+
+#last-button {
+    border-right: none;
+}
+
+/*Content*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    background-color: var(--glass);
+    margin: 50px auto;
+    padding: 25px 40px;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+article {
+    border-bottom: 5px dotted var(--gold);
+    display: flex;
+    flex-direction: column;
+}
+
+#thought {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutme {
+    margin-bottom: 50px;
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--gold);
+}
+
+h3 {
+    align-self: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: var(--gold);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.read-more {
+    align-self: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--silver);
+    transition: 1s;
+}
+
+.read-more:hover {
+    color: var(--gold);
+}
+
+#more {
+    align-self: center;
+    margin-top: 20px;
+    background:fixed;
+    border: none;
+    font-family: 'Courgette', cursive;
+    color: var(--gold);
+    font-size: 20px;
+}
+
+/*Przeczytaj Bajkę*/
+
+#bajki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: max-content;
+    border-top: 2px solid var(--gold);
+}
+
+.cover {
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    border: 2px solid var(--silver);
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    margin: 40px 10px 0px 10px;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+    font-size: 20px;
+}
+
+#balwan {
+    background-image: url("img/balwan.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Footer*/
+
+footer {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    line-height: 1.5;
+    color: var(--gold);
+}
