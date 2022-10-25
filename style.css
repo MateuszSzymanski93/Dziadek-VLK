@@ -15,8 +15,9 @@ body {
 
 .gradient{
     background: linear-gradient(90deg, var(--gold), var(--light-gold));
-    color: transparent;
+    color: white;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*Header*/
@@ -60,9 +61,9 @@ nav {
 .nav-button {
     background: none;
     border: none;
-    border-right: 5px dotted var(--silver);
+    border-right: 3px dashed var(--silver);
     font-family: 'Courgette', cursive;
-    font-size: 2vw;
+    font-size: 1.6vw;
     overflow: hidden;
 }
 
