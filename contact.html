@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
     <head>
         <meta charset="utf-8"/>
@@ -33,32 +32,24 @@
         </nav>
         <img src="img/wilk2.png" id="wolf">
         <main>
-            <h2 class="gradient" style="align-self: center; font-family: 'Fondamento', cursive; font-size: 40px; letter-spacing: 5px;">Przeczytaj bajkę</h2>
-            <section id="bajki">
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p id="name">Bajka o lepieniu bałwana</p>
-                </div>
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p>Bajka o lepieniu bałwana</p>
-                </div>
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p>Bajka o lepieniu bałwana</p>
-                </div>
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p>Bajka o lepieniu bałwana</p>
-                </div>
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p>Bajka o lepieniu bałwana</p>
-                </div>
-                <div class="story">
-                    <a href=balwan.pdf target="_blank" class="cover" id="balwan"></a>
-                    <p>Bajka o lepieniu bałwana</p>
-                </div>
+            <h2 class="gradient" style="align-self: center; font-family: 'Fondamento', cursive; font-size: 40px; letter-spacing: 5px;">Skontaktuj się z wydawnictwem</h2>
+            <section id="bajki" style="width: 60vw;">
+                <p id="contact">
+                    Dziękuję za odwiedzenie strony Dziadek Vlk alias Dziadek Bajka. "Bajki prawdziwe". Zachęcam do zadawania pytań i dzielenia się sugestiami za pomocą poniższego formularza lub wysyłając wiadomość bezpośrednio na maila:<br>
+                    <a class="gradient" href="mailto:mateusz.szymanski93@gmail.com" id="mailto">dziadek-bajka@gmail.com</a>
+                </p>
+                <form 
+                action="https://formspree.io/f/xbjbzdql" 
+                method="POST" 
+                class="conatct-form">
+                    <label for="mail" class="label">Twój e-mail</label>
+                    <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres e-mail" class="input">
+                    <label for="msg"  class="label">Twoja wiadomość</label>
+                    <textarea id="msg" name="msg" rows="8" placeholder="Wpisz wiadomość" class="input"></textarea>
+                    <input value="Wyślij" type="submit" id="send">
+                    <!--Naprawić przekierowanie po wysłaniu e-maila-->
+                    <input name="_redirect" type="hidden" value="http://127.0.0.1:5500/contact.html">
+                </form>
             </section>
         </main>
         <footer class="gradient">
